@@ -22,14 +22,14 @@ const MoreBook = () => {
 
   const loadBook = async () => {
     const result = await axios.get(
-      `https://nikalib-backend.herokuapp.com/books/book/${id}`
+      `https://nikalib-backend.herokuapp.com/book/${id}`
     );
     setBook(result.data);
   };
 
   const deleteBook = async (id) => {
     await axios.delete(
-      `https://nikalib-backend.herokuapp.com/books/book/${id}`
+      `https://nikalib-backend.herokuapp.com/book/${id}`
     );
     loadBook();
     navigate("/Books");
