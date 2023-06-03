@@ -22,7 +22,7 @@ const Books = () => {
 
   const loadBooks = async () => {
     const result = await axios.get(
-      "https://nikalib-backend.herokuapp.com/books/getAll"
+      "https://nikalib-backend.herokuapp.com/getAll"
     );
     setBooks(result.data);
   };
