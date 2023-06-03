@@ -15,12 +15,10 @@
   font-weight: 500;
 }
 
-
 .img {
   margin-top: 24px;
   width: 100%;
   height: auto;
-  /* object-fit: cover; */
 }
 
 .button {
@@ -36,8 +34,8 @@
   font-size: 18px;
   font-weight: 500;
   font-family: "Nunito", sans-serif;
-  color:  var(--color-white);
-    text-decoration: none;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .cta {
@@ -47,3 +45,35 @@
   gap: 24px;
 }
 
+/* Адаптація для менших екранів */
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 48px;
+    margin-top: 16px;
+  }
+
+  .h4 {
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .img {
+    margin-top: 16px;
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  .cta {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
