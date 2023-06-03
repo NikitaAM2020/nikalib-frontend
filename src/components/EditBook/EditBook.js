@@ -28,7 +28,7 @@ const EditBook = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.put(
-      `https://nikalib-backend.herokuapp.com/books/book/${id}`,
+      `https://nikalib-backend.herokuapp.com/book/${id}`,
       book
     );
     navigate("/Books");
@@ -36,7 +36,7 @@ const EditBook = () => {
 
   const loadBook = async () => {
     const result = await axios.get(
-      `https://nikalib-backend.herokuapp.com/books/book/${id}`
+      `https://nikalib-backend.herokuapp.com/book/${id}`
     );
     setBook(result.data);
   };
