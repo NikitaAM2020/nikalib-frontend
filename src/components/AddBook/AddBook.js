@@ -22,7 +22,7 @@ const AddBook = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("https://nikalib-backend.herokuapp.com/books/add", book);
+    await axios.post("https://nikalib-backend.herokuapp.com/add", book);
     navigate("/");
   };
 
