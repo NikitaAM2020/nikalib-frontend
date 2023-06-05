@@ -88,7 +88,7 @@ const AddBook = () => {
     setErrors(newErrors);
 
     if (formValid) {
-      await axios.post("http://localhost:8080/add", book);
+      await axios.post("https://nikalib-backend.herokuapp.com/add", book);
     navigate("/");
     }
 
