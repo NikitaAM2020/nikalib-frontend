@@ -110,7 +110,7 @@ const AddBook = () => {
             onChange={(e) => onInputChange(e)}
           />
           {errors.bookname && (
-            <div className={style.invalid-feedback}>{errors.bookname}</div>
+            <div className="invalid-feedback">{errors.bookname}</div>
           )}
         </div>
         <div>
