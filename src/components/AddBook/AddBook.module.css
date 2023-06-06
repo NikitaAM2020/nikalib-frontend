@@ -59,3 +59,7 @@
   background: var(--color-white);
   text-transform: uppercase;
 }
+
+.invalid-feedback {
+  color: #820000;
+}
